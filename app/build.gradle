@@ -2,16 +2,21 @@ plugins {
     id "com.android.application"
     id "org.jetbrains.kotlin.android"
     id "kotlin-kapt"
+    id 'kotlin-parcelize'
+//    id 'androidx.navigation.safeargs.kotlin'
 }
 android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "me.ash.reader"
+        applicationId "com.example.cat"
         minSdk 29
         targetSdk 34
         versionCode 1
         versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -35,7 +40,7 @@ android {
         enabled = true
     }
 
-    namespace 'me.ash.reader'
+    namespace 'com.example.cat'
 }
 dependencies {
     implementation "androidx.core:core-ktx:1.12.0"
@@ -79,5 +84,6 @@ dependencies {
     implementation "com.google.android.flexbox:flexbox:$flexbox_version"
     implementation "com.squareup.moshi:moshi-kotlin:$moshi_version"
     implementation "com.github.xuexiangjys:XUI:$XUI_version"
+    implementation "com.haibin:calendarview:$calendarview_version"
     //
 }

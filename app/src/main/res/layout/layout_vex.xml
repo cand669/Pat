@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/flai">
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/v_vp"
+        style="@style/masm" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/v_mtab"
+        style="@style/telk"/>
+
+</LinearLayout>

@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/lusk">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/flai"
+    android:theme="@style/Theme.Material3.Light.NoActionBar">
 
-    <Button
-        android:id="@+id/but"
-        style="@style/crif"
-        android:text="activity_test" />
+    <com.haibin.calendarview.CalendarLayout
+        android:id="@+id/v_cdl"
+        style="@style/telk"
+        android:background="#fff"
+        android:orientation="vertical"
+        app:calendar_content_view_id="@+id/recyclerView">
+
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/v_cdv"
+            style="@style/telk"
+            android:background="#fff"
+            app:calendar_height="52dp"
+            app:current_month_lunar_text_color="#CFCFCF"
+            app:current_month_text_color="#333333"
+            app:day_text_size="14sp"
+            app:max_year="2024"
+            app:min_year="2022"
+            app:month_view="com.example.cat.widget.progress.ProgressMonthView"
+            app:month_view_show_mode="mode_fix"
+            app:other_month_lunar_text_color="#e1e1e1"
+            app:other_month_text_color="#e1e1e1"
+            app:scheme_text="假"
+            app:scheme_text_color="#333"
+            app:scheme_theme_color="#128c4b"
+
+            app:week_background="#fff"
+            app:week_text_color="#111111"
+            app:week_view="com.example.cat.widget.progress.ProgressWeekView"
+            app:year_view_day_text_color="#333333"
+            app:year_view_day_text_size="9sp"
+            app:year_view_month_text_color="#ff0000"
+            app:year_view_month_text_size="20sp"
+            app:year_view_scheme_color="#f17706" />
+
+
+    </com.haibin.calendarview.CalendarLayout>
+
 </LinearLayout>

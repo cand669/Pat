@@ -13,7 +13,7 @@ print(s)
 from Base import *
 activity_layout_temp = '''<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-style="@style/lusk">
+style="@style/flai">
 
     <Button
         android:id="@+id/but"
@@ -23,7 +23,7 @@ style="@style/lusk">
 def activity_kt_temp(i,r,m):
 return '''package com.example.'''+m+'''.activity
 import com.example.'''+m+'''.core.BaseActivity
-import me.ash.reader.databinding.Activity'''+r+'''Binding
+import com.example.cat.databinding.Activity'''+r+'''Binding
 
 class '''+r+'''Activity : BaseActivity<Activity'''+r+'''Binding>() {
 override fun InitView() {
@@ -48,7 +48,7 @@ func('test','cat')
 from Base import *
 fragment_layout_temp = '''<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-style="@style/lusk">
+style="@style/flai">
 
     <Button
         android:id="@+id/but"
@@ -64,7 +64,7 @@ def fragmnet_kt_temp(i,r,m):
 return '''package com.example.'''+i+'''.fragment
 
 import com.example.'''+m+'''.core.BaseFragment
-import me.ash.reader.databinding.Fragment'''+r+'''Binding
+import com.example.cat.databinding.Fragment'''+r+'''Binding
 
 class '''+r+'''Fragment : BaseFragment<Fragment'''+r+'''Binding>() {
 override fun InitView() {
