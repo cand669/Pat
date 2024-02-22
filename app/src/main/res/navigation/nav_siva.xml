@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_tree"
+    app:startDestination="@id/bxcFragment">
+
+    <fragment
+        android:id="@+id/bxcFragment"
+        android:name="com.example.bxc.fragment.BxcFragment"
+        android:label="BxcFragment" />
+    <fragment
+        android:id="@+id/ganFragment"
+        android:name="com.example.gan.fragment.GanFragment"
+        android:label="GanFragment" />
+    <fragment
+        android:id="@+id/hamFragment"
+        android:name="com.example.ham.fragment.HamFragment"
+        android:label="HamFragment" />
+</navigation>

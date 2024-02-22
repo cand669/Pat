@@ -1,0 +1,50 @@
+buildscript {
+    ext {
+        lifecycle_version = '2.6.2'
+
+        navigation_version = '2.5.0-rc01'
+
+        room_version = '2.6.1'
+
+        okhttp_version = '5.0.0-alpha.12'
+
+        vb_version = '2.1.0'
+
+        longan_version = "1.1.1"
+
+        lifecycle_version = "2.6.2"
+
+        material_version = "1.11.0"
+
+        constraintlayout_version = "2.1.4"
+
+        coroutines_version = "1.5.1"
+
+        Channel_version = "1.1.5"
+
+        BRV_version = "1.5.8"
+
+        Serialize_version = "3.0.1"
+
+        vlayout_version = "1.2.8"
+
+        XPopup_version = "2.10.0"
+
+        flexbox_version = "3.0.0"
+
+        moshi_version = "1.13.0"
+
+        XUI_version = "1.2.1"
+
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.2.2' apply false
+//    id 'com.android.library' version '8.2.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.22' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

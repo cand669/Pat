@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/flai">
+    <Button
+        android:id="@+id/v_but_0"
+        android:text="item_"
+        style="@style/crif"/>
+    <Button
+        android:id="@+id/v_but_1"
+        android:text="item_"
+        style="@style/crif"/>
+</LinearLayout>
